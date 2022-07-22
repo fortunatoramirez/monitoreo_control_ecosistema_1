@@ -25,12 +25,12 @@ socket.on('desde_servidor_hum', function(data){
 
 function encender()
 {
-    socket.emit("desde_cliente","ON");
+    socket.emit("desde_cliente","P");
 }
 
 function apagar()
 {
-    socket.emit("desde_cliente","OFF");
+    socket.emit("desde_cliente","A");
 }
 
 function enviar_comando()
