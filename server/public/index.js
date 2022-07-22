@@ -25,18 +25,18 @@ socket.on('desde_servidor_hum', function(data){
 
 function encender()
 {
-    socket.emit("desde_cliente","P");
+    socket.emit("comando","P");
 }
 
 function apagar()
 {
-    socket.emit("desde_cliente","A");
+    socket.emit("comando","A");
 }
 
 function enviar_comando()
 {
     var comando = document.getElementById('txt_comando').value;
-    socket.emit('desde_cliente',comando);
+    socket.emit('comando',comando);
 
 }
 
